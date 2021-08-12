@@ -1,0 +1,2 @@
+# HLNetworkManager
+HLNetworkManager是结合AFNetworking、YYCache封装的轻量级网络请求库
