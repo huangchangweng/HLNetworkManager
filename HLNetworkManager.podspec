@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "HLNetworkManager"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "HLNetworkManager是结合AFNetworking、YYCache封装的轻量级网络请求库"
 
   # 描述
@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
 
   # git仓库，tag
-  spec.source       = { :git => "git@github.com:huangchangweng/HLNetworkManager.git", :tag => "1.0.0" }
+  spec.source       = { :git => "git@github.com:huangchangweng/HLNetworkManager.git", :tag => "1.0.1" }
 
   # 资源路径
   spec.source_files  = "HLNetworkManager/HLNetworkManager/*.{h,m}"
