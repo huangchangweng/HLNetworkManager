@@ -75,6 +75,9 @@ static AFHTTPSessionManager *_sessionManager;
     if ([object isKindOfClass:[NSString class]]) {
         return (NSString *)object;
     }
+    if (!object) {
+        return @"";
+    }
     NSError *parseError = nil;
     NSData *data = [NSJSONSerialization dataWithJSONObject:object options:NSJSONWritingPrettyPrinted error:&parseError];
     NSString *jsonSrt = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
