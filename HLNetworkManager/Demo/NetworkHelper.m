@@ -32,8 +32,6 @@
         if (failure) {failure(error);}
     }];
     return sessionTask;
-    
-    
 }
 
 @end

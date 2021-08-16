@@ -26,6 +26,22 @@ pod 'HLNetworkManager'
 }];
 ```
 
+其它可选设置:（更所设置请参照HLNetworkManager.h）<p>
+
+```
+// 设置网络请求参数的格式:默认为二进制格式
+[HLNetworkManager setRequestSerializer:HLRequestSerializerTypeJSON];
+
+// 日志开关，默认开启
+[HLNetworkManager openLog:YES];
+
+// 配置自建证书的Https请求
+[HLNetworkManager setSecurityPolicyWithCerPath:cerPath validatesDomainName:YES];
+
+// 设置headers
+[HLNetworkManager setHTTPHeaders:headers];
+```
+
 # Requirements
 
 iOS 8.0 +, Xcode 7.0 +
