@@ -6,7 +6,7 @@ HLNetworkManager是结合AFNetworking、YYCache封装的轻量级网络请求库
 ```objc
 pod 'HLNetworkManager'
 ```
-✅1.只定义自定义请求方式 <p>
+✅1.自定义请求方式 <p>
 ✅2.自定义请求头 <p>
 ✅3.自定义请求参数是Json还是二进制 <p>
 ✅4.自定义返回数据类型是Json还是二进制 <p>
