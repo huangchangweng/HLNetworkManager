@@ -20,6 +20,7 @@ pod 'HLNetworkManager'
 [HLNetworkManager request:HLRequestTypePOST 
                       URL:url 
                parameters:parameters 
+                  headers:headers
     qqqqqqqqresponseCache:^(id cacheObject) {
     
 } success:^(id responseObject) {
@@ -40,9 +41,6 @@ pod 'HLNetworkManager'
 
 // 配置自建证书的Https请求
 [HLNetworkManager setSecurityPolicyWithCerPath:cerPath validatesDomainName:YES];
-
-// 设置headers
-[HLNetworkManager setHTTPHeaders:headers];
 ```
 
 # Requirements
