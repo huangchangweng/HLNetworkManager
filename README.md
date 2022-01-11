@@ -4,7 +4,7 @@ HLNetworkManager是结合AFNetworking、YYCache封装的轻量级网络请求库
 ##### 支持使用CocoaPods引入, Podfile文件中添加:
 
 ```objc
-pod 'HLNetworkManager'
+pod 'HLNetworkManager', '1.0.2'
 ```
 ✅1.自定义请求方式 <p>
 ✅2.自定义请求头 <p>
