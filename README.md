@@ -21,7 +21,7 @@ pod 'HLNetworkManager', '1.0.2'
                       URL:url 
                parameters:parameters 
                   headers:headers
-    qqqqqqqqresponseCache:^(id cacheObject) {
+            responseCache:^(id cacheObject) {
     
 } success:^(id responseObject) {
     
