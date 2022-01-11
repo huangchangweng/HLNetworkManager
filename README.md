@@ -48,6 +48,10 @@ iOS 8.0 +, Xcode 7.0 +
 
 # Version
 
+* 1.0.2 :
+  1.优化请求头传入
+  2.添加线程安全支持
+
 * 1.0.1 : 
 
   修复 [#issue5](https://github.com/huangchangweng/HLNetworkManager/commit/644204e71d006a5286e5681d342efacbe32e9c5c)<p>
