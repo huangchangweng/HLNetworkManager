@@ -17,7 +17,10 @@ pod 'HLNetworkManager'
 基本使用方法:<p>
 
 ```
-[HLNetworkManager request:HLRequestTypePOST URL:url parameters:parameters responseCache:^(id cacheObject) {
+[HLNetworkManager request:HLRequestTypePOST 
+                      URL:url 
+               parameters:parameters 
+    qqqqqqqqresponseCache:^(id cacheObject) {
     
 } success:^(id responseObject) {
     
