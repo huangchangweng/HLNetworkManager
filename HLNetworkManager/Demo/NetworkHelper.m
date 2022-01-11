@@ -23,7 +23,7 @@
             success(YES, @"获取缓存成功", cacheObject);
         }
     };
-    NSURLSessionTask *sessionTask = [HLNetworkManager request:HLRequestTypePOST URL:url parameters:parameters responseCache:isCache?responseCache:NULL success:^(id responseObject) {
+    NSURLSessionTask *sessionTask = [HLNetworkManager request:HLRequestTypePOST URL:url parameters:parameters headers:nil responseCache:isCache?responseCache:NULL success:^(id responseObject) {
         
         // TODO...
         

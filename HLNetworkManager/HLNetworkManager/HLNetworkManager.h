@@ -78,12 +78,13 @@ typedef void (^HLHttHLrogress)(NSProgress *progress);
 + (__kindof NSURLSessionTask *)request:(HLRequestType)type
                                    URL:(NSString *)URL
                             parameters:(id)parameters
+                               headers:(NSDictionary <NSString *, NSString *> *)headers
                          responseCache:(HLHttpRequestCache)responseCache
                                success:(HLHttpRequestSuccess)success
                                failure:(HLHttpRequestFailed)failure;
 
 /**
- *  上传文件
+ *  上传文件（根据文件路径）
  *
  *  @param URL        请求地址
  *  @param parameters 请求参数
@@ -97,6 +98,7 @@ typedef void (^HLHttHLrogress)(NSProgress *progress);
  */
 + (__kindof NSURLSessionTask *)uploadFileWithURL:(NSString *)URL
                                       parameters:(id)parameters
+                                         headers:(NSDictionary <NSString *, NSString *> *)headers
                                             name:(NSString *)name
                                         filePath:(NSString *)filePath
                                         progress:(HLHttHLrogress)progress
@@ -110,7 +112,7 @@ typedef void (^HLHttHLrogress)(NSProgress *progress);
  *  @param parameters 请求参数
  *  @param name       文件对应服务器上的字段
  *  @param fileDatas  文件数组
- *  @param fileNames  图片文件名数组, 可以为nil, 数组内的文件名默认为当前日期时间"yyyyMMddHHmmss"
+ *  @param fileNames  文件名数组, 可以为nil, 数组内的文件名默认为当前日期时间"yyyyMMddHHmmss"
  *  @param mimeType   image/jpeg、video/mp4等...
  *  @param progress   上传进度信息
  *  @param success    请求成功的回调
@@ -120,8 +122,9 @@ typedef void (^HLHttHLrogress)(NSProgress *progress);
  */
 + (__kindof NSURLSessionTask *)uploadFilesWithURL:(NSString *)URL
                                        parameters:(id)parameters
+                                          headers:(NSDictionary <NSString *, NSString *> *)headers
                                              name:(NSString *)name
-                                           images:(NSArray<NSData *> *)fileDatas
+                                        fileDatas:(NSArray<NSData *> *)fileDatas
                                         fileNames:(NSArray<NSString *> *)fileNames
                                          mimeType:(NSString *)mimeType
                                          progress:(HLHttHLrogress)progress
@@ -174,11 +177,6 @@ typedef void (^HLHttHLrogress)(NSProgress *progress);
  *  @param time 时长
  */
 + (void)setRequestTimeoutInterval:(NSTimeInterval)time;
-
-/**
- *  设置请求头
- */
-+ (void)setHTTPHeaders:(NSDictionary <NSString *, NSString *> *)headers;
 
 /**
  *  是否打开网络状态转圈菊花:默认打开
