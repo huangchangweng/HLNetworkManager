@@ -46,6 +46,11 @@ pod 'HLNetworkManager', '1.0.2'
 # Requirements
 
 iOS 8.0 +, Xcode 7.0 +
+ 
+# Dependency
+
+- "AFNetworking", "4.0"
+- "YYCache", "1.0.4"
 
 # Version
 
