@@ -31,7 +31,7 @@ Pod::Spec.new do |spec|
   spec.frameworks = "Foundation", "UIKit"
 
   # 依赖第三方库
-  spec.dependency "AFNetworking"
-  spec.dependency "YYCache"
+  spec.dependency "AFNetworking", "4.0"
+  spec.dependency "YYCache", "1.0.4"
 
 end
